@@ -1,5 +1,7 @@
 # `@xeedware/http-status-codes`
 
+[![Build Status](https://travis-ci.org/xeedware/http-status-codes.svg?branch=master)](https://travis-ci.org/xeedware/http-status-codes) [![codecov](https://codecov.io/gh/xeedware/http-status-codes/branch/master/graph/badge.svg)](https://codecov.io/gh/xeedware/http-status-codes)
+
 Typescript classes customizable to a target HTTP API to get
 its **status codes**, associated **reason phrases**
 and **references**.

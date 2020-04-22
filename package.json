@@ -1,6 +1,6 @@
 {
   "name": "@xeedware/http-status-codes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript classes customizable to a target HTTP API to get its **status codes**, associated **reason phrases** and **references**.",
   "keywords": [
     "IANA",
@@ -11,6 +11,7 @@
   ],
   "author": "Al Tabayoyon <alt@xeedware.org>",
   "license": "Apache-2.0",
+  "homepage": "https://xeedware.github.io/http-status-codes/",
   "repository": {
     "type": "git",
     "url": "https://github.com/xeedware/http-status-code.git"

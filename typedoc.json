@@ -1,0 +1,18 @@
+{
+  "inputFiles": [
+    "src/*.ts"
+  ],
+  "exclude": [
+    "__tests__",
+    "docs",
+    "lib",
+    "node_modules",
+    "scripts",
+    "src/index.ts"
+  ],
+  "tsconfig": "./src/tsconfig.json",
+  "mode": "modules",
+  "out": "docs",
+  "theme": "minimal",
+  "categoryOrder": ["Public", "Protected"]
+}

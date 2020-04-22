@@ -1,0 +1,48 @@
+{
+  "name": "@xeedware/http-status-codes",
+  "version": "1.0.0",
+  "description": "Typescript classes customizable to a target HTTP API to get its **status codes**, associated **reason phrases** and **references**.",
+  "keywords": [
+    "IANA",
+    "HTTP status codes",
+    "IANA HTTP Status Code Registry",
+    "Postman Echo",
+    "Typescript"
+  ],
+  "author": "Al Tabayoyon <alt@xeedware.org>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xeedware/http-status-code.git"
+  },
+  "main": "lib/index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clear-docs": "npx rimraf docs/*",
+    "clear-lib": "npx rimraf lib/*",
+    "download-iana-dataset": "./bin/iana-http-status-csv_to_json.sh > iana.dataset.json",
+    "build": "npm run build-lib && npm run build-docs",
+    "build-docs": "typedoc && touch docs/.nojekyll",
+    "build-lib": "npm run clear-lib && tsc -p src",
+    "lint": "npx tslint -p src",
+    "lint-readme": "markdownlint README.md",
+    "test": "jest",
+    "testcov": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.3.0",
+    "markdownlint-cli": "^0.22.0",
+    "ts-jest": "^25.3.0",
+    "tslint": "^6.1.1",
+    "typedoc": "^0.17.3",
+    "typescript": "^3.8.3"
+  }
+}

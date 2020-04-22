@@ -1,0 +1,13 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "class-name": true,
+        "file-name-casing": [true, {"index.ts": "ignore", ".ts":  "pascal-case"}],
+        "no-unused-expression": false
+    },
+    "rulesDirectory": []
+}
